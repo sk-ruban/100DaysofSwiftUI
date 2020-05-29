@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471716EA2480170200EB5ADF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471716E92480170200EB5ADF /* ImagePicker.swift */; };
 		47D0F868247EABC200540A1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0F867247EABC200540A1F /* AppDelegate.swift */; };
 		47D0F86A247EABC200540A1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0F869247EABC200540A1F /* SceneDelegate.swift */; };
 		47D0F86C247EABC200540A1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0F86B247EABC200540A1F /* ContentView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		471716E92480170200EB5ADF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		47D0F864247EABC200540A1F /* InstaFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D0F867247EABC200540A1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D0F869247EABC200540A1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				47D0F867247EABC200540A1F /* AppDelegate.swift */,
 				47D0F869247EABC200540A1F /* SceneDelegate.swift */,
 				47D0F86B247EABC200540A1F /* ContentView.swift */,
+				471716E92480170200EB5ADF /* ImagePicker.swift */,
 				47D0F86D247EABC400540A1F /* Assets.xcassets */,
 				47D0F872247EABC400540A1F /* LaunchScreen.storyboard */,
 				47D0F875247EABC400540A1F /* Info.plist */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D0F868247EABC200540A1F /* AppDelegate.swift in Sources */,
+				471716EA2480170200EB5ADF /* ImagePicker.swift in Sources */,
 				47D0F86A247EABC200540A1F /* SceneDelegate.swift in Sources */,
 				47D0F86C247EABC200540A1F /* ContentView.swift in Sources */,
 			);

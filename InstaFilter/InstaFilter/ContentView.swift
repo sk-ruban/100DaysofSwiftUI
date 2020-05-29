@@ -12,36 +12,27 @@ import CoreImage.CIFilterBuiltins
 
 struct ContentView: View {
     @State private var image: Image?
+    @State private var showingImagePicker = false
+    @State private var inputImage: UIImage?
 
     var body: some View {
         VStack {
             image?
                 .resizable()
                 .scaledToFit()
+
+            Button("Select Image") {
+               self.showingImagePicker = true
+            }
         }
-        .onAppear(perform: loadImage)
+        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
+            ImagePicker(image: self.$inputImage)
+        }
     }
-
+    
     func loadImage() {
-        guard let inputImage = UIImage(named: "Example") else { return }
-        let beginImage = CIImage(image: inputImage)
-
-        let context = CIContext()
-        let currentFilter = CIFilter.pixellate()
-        currentFilter.inputImage = beginImage
-        currentFilter.scale = 100
-        
-        // get a CIImage from our filter or exit if that fails
-        guard let outputImage = currentFilter.outputImage else { return }
-
-        // attempt to get a CGImage from our CIImage
-        if let cgimg = context.createCGImage(outputImage, from: outputImage.extent) {
-            // convert that to a UIImage
-            let uiImage = UIImage(cgImage: cgimg)
-
-            // and convert that to a SwiftUI image
-            image = Image(uiImage: uiImage)
-        }
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
     }
 }
 
