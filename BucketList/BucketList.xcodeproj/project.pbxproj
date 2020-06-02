@@ -14,6 +14,8 @@
 		47D1CB1724853F7F00963202 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D1CB1624853F7F00963202 /* Preview Assets.xcassets */; };
 		47D1CB1A24853F7F00963202 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D1CB1824853F7F00963202 /* LaunchScreen.storyboard */; };
 		47D1CB222486132800963202 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1CB212486132800963202 /* MapView.swift */; };
+		47D1CB2424868FAE00963202 /* MKPointAnnotation-ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1CB2324868FAE00963202 /* MKPointAnnotation-ObservableObject.swift */; };
+		47D1CB282486901600963202 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D1CB272486901600963202 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		47D1CB1924853F7F00963202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47D1CB1B24853F7F00963202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D1CB212486132800963202 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = SOURCE_ROOT; };
+		47D1CB2324868FAE00963202 /* MKPointAnnotation-ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-ObservableObject.swift"; sourceTree = "<group>"; };
+		47D1CB272486901600963202 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,12 @@
 		47D1CB0C24853F7B00963202 /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				47D1CB272486901600963202 /* EditView.swift */,
 				47D1CB212486132800963202 /* MapView.swift */,
 				47D1CB0D24853F7B00963202 /* AppDelegate.swift */,
 				47D1CB0F24853F7B00963202 /* SceneDelegate.swift */,
 				47D1CB1124853F7B00963202 /* ContentView.swift */,
+				47D1CB2324868FAE00963202 /* MKPointAnnotation-ObservableObject.swift */,
 				47D1CB1324853F7F00963202 /* Assets.xcassets */,
 				47D1CB1824853F7F00963202 /* LaunchScreen.storyboard */,
 				47D1CB1B24853F7F00963202 /* Info.plist */,
@@ -151,7 +157,9 @@
 			files = (
 				47D1CB0E24853F7B00963202 /* AppDelegate.swift in Sources */,
 				47D1CB222486132800963202 /* MapView.swift in Sources */,
+				47D1CB282486901600963202 /* EditView.swift in Sources */,
 				47D1CB1024853F7B00963202 /* SceneDelegate.swift in Sources */,
+				47D1CB2424868FAE00963202 /* MKPointAnnotation-ObservableObject.swift in Sources */,
 				47D1CB1224853F7B00963202 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
