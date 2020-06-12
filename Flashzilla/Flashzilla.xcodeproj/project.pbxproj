@@ -13,6 +13,8 @@
 		47832503249245F80098B579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47832502249245F80098B579 /* Assets.xcassets */; };
 		47832506249245F80098B579 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47832505249245F80098B579 /* Preview Assets.xcassets */; };
 		47832509249245F80098B579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47832507249245F80098B579 /* LaunchScreen.storyboard */; };
+		47A41F982493C6F300130CB6 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A41F972493C6F300130CB6 /* Card.swift */; };
+		47A41F9A2493C84500130CB6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A41F992493C84500130CB6 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		47832505249245F80098B579 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47832508249245F80098B579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4783250A249245F80098B579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47A41F972493C6F300130CB6 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = SOURCE_ROOT; };
+		47A41F992493C84500130CB6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		478324FB249245F60098B579 /* Flashzilla */ = {
 			isa = PBXGroup;
 			children = (
+				47A41F972493C6F300130CB6 /* Card.swift */,
 				478324FC249245F60098B579 /* AppDelegate.swift */,
 				478324FE249245F60098B579 /* SceneDelegate.swift */,
 				47832500249245F60098B579 /* ContentView.swift */,
+				47A41F992493C84500130CB6 /* CardView.swift */,
 				47832502249245F80098B579 /* Assets.xcassets */,
 				47832507249245F80098B579 /* LaunchScreen.storyboard */,
 				4783250A249245F80098B579 /* Info.plist */,
@@ -149,6 +155,8 @@
 				478324FD249245F60098B579 /* AppDelegate.swift in Sources */,
 				478324FF249245F60098B579 /* SceneDelegate.swift in Sources */,
 				47832501249245F60098B579 /* ContentView.swift in Sources */,
+				47A41F982493C6F300130CB6 /* Card.swift in Sources */,
+				47A41F9A2493C84500130CB6 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
