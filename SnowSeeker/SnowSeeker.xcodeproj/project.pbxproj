@@ -17,6 +17,11 @@
 		47D72FDB249A1DED0070C27E /* Resort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D72FDA249A1DED0070C27E /* Resort.swift */; };
 		47D72FDD249A1E640070C27E /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D72FDC249A1E640070C27E /* Bundle-Decodable.swift */; };
 		47D72FDF249A200C0070C27E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D72FDE249A200C0070C27E /* WelcomeView.swift */; };
+		47D72FE1249AD7B90070C27E /* ResortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D72FE0249AD7B90070C27E /* ResortView.swift */; };
+		47D72FE3249AD8940070C27E /* SkiDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D72FE2249AD8940070C27E /* SkiDetailsView.swift */; };
+		47D72FE5249AD8CF0070C27E /* ResortDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D72FE4249AD8CF0070C27E /* ResortDetailsView.swift */; };
+		47D72FE7249ADE060070C27E /* Facility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D72FE6249ADE060070C27E /* Facility.swift */; };
+		47D72FE9249AE07B0070C27E /* Favorites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D72FE8249AE07B0070C27E /* Favorites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		47D72FDA249A1DED0070C27E /* Resort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resort.swift; sourceTree = "<group>"; };
 		47D72FDC249A1E640070C27E /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		47D72FDE249A200C0070C27E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		47D72FE0249AD7B90070C27E /* ResortView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortView.swift; sourceTree = "<group>"; };
+		47D72FE2249AD8940070C27E /* SkiDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiDetailsView.swift; sourceTree = "<group>"; };
+		47D72FE4249AD8CF0070C27E /* ResortDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortDetailsView.swift; sourceTree = "<group>"; };
+		47D72FE6249ADE060070C27E /* Facility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Facility.swift; sourceTree = "<group>"; };
+		47D72FE8249AE07B0070C27E /* Favorites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,11 @@
 				47D72FDE249A200C0070C27E /* WelcomeView.swift */,
 				47D72FCA249A0FB80070C27E /* Assets.xcassets */,
 				47D72FDA249A1DED0070C27E /* Resort.swift */,
+				47D72FE0249AD7B90070C27E /* ResortView.swift */,
+				47D72FE8249AE07B0070C27E /* Favorites.swift */,
+				47D72FE6249ADE060070C27E /* Facility.swift */,
+				47D72FE2249AD8940070C27E /* SkiDetailsView.swift */,
+				47D72FE4249AD8CF0070C27E /* ResortDetailsView.swift */,
 				47D72FDC249A1E640070C27E /* Bundle-Decodable.swift */,
 				47D72FCF249A0FB80070C27E /* LaunchScreen.storyboard */,
 				47D72FD2249A0FB80070C27E /* Info.plist */,
@@ -161,10 +176,15 @@
 			files = (
 				47D72FC5249A0FB40070C27E /* AppDelegate.swift in Sources */,
 				47D72FDF249A200C0070C27E /* WelcomeView.swift in Sources */,
+				47D72FE7249ADE060070C27E /* Facility.swift in Sources */,
 				47D72FC7249A0FB40070C27E /* SceneDelegate.swift in Sources */,
+				47D72FE1249AD7B90070C27E /* ResortView.swift in Sources */,
+				47D72FE9249AE07B0070C27E /* Favorites.swift in Sources */,
 				47D72FDD249A1E640070C27E /* Bundle-Decodable.swift in Sources */,
 				47D72FDB249A1DED0070C27E /* Resort.swift in Sources */,
+				47D72FE5249AD8CF0070C27E /* ResortDetailsView.swift in Sources */,
 				47D72FC9249A0FB40070C27E /* ContentView.swift in Sources */,
+				47D72FE3249AD8940070C27E /* SkiDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
