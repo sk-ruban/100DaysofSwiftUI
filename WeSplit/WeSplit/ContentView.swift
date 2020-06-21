@@ -15,6 +15,15 @@ struct ContentView: View {
     
     let tipPercentages = [0,10,15,20,25]
     
+    var personOrPeople: String {
+        if Int(people) == 1 {
+            return "Person"
+        }
+        else {
+            return "People"
+        }
+    }
+    
     var totalPerPax: Double {
         let peopleCount = Double(people)
         let tipSelection = Double(tipPercentages[tipPercentage])
@@ -30,12 +39,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             Form{
-                Section{
+                Section(header: Text("Input the Fee & Number of People")){
                     TextField("Amount", text: $amount)
-                    Picker("Number of People", selection: $people){
-                        ForEach(0..<100) {
-                            Text("\($0) people")
-                        }
+                        .keyboardType(.decimalPad)
+                    Stepper(value: $people, in: 1...30){
+                        Text("\(people) \(personOrPeople)")
                     }
                 }
                 
@@ -48,14 +56,19 @@ struct ContentView: View {
                     .pickerStyle(SegmentedPickerStyle())
                 }
                 
-                Section{
+                Section(header: Text("The Amount per Person is:")){
                     Text("$\(totalPerPax, specifier: "%.2f")")
                 }
                 
             }
-            .navigationBarTitle(Text("WeSplit"))
-            .foregroundColor(Color.orange)
+            .navigationBarTitle(Text("💸 WeSplit"))
         }
+    }
+    
+    init() {
+      let navBarAppearance = UINavigationBar.appearance()
+      navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.orange]
+      navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
 }
 
