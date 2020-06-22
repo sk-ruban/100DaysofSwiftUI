@@ -5,4 +5,4 @@
 This is my repository for the course, [100 Days Of SwiftUI Challenge](https://www.hackingwithswift.com/100/swiftui) by Paul Hudson. In this repo, you can find the completed projects + my own additional notes for the changes I made, to improve the respective project.
 
 ## 1. WeSplit
-
+![WeSplitGif](./Assets/WeSplitGif.gif)
