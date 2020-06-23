@@ -9,21 +9,21 @@ For this challenge, I created an app which performs:
 
 ## TabView
 
-I created 1 View for each conversion and accessed them with TabView in Content View
+I created 1 View for each conversion and accessed them with **TabView** in Content View
 
 ```swift
 TabView{
-            TempView()
+         TempView()
             .tabItem {
                 Image(systemName: "thermometer")
                 Text("Temperature")
             }
-            LengthView()
+         LengthView()
             .tabItem {
                 Image(systemName: "rectangle.compress.vertical")
                 Text("Length")
-              
-   					// And so on for the remaining 2 Views
+                
+        // And so on for the remaining 2 Views
         }
 ```
 
@@ -37,15 +37,15 @@ For the TabView Image, I used SF Symbols. Due to SwiftUI's limitations, I was un
 
 ## View Interface
 
-For a nice rounded-rectangle input Section interfaces, I used a List rather than a form and added in the following modifiers.
+For a nice rounded-rectangle input Section interfaces, I used a **List** rather than a Form and added in the following modifiers.
 
 ```swift
 List{
-  		Section{
-      		// Insert Code Here  
+      Section{
+      // Insert Code Here  
       }
-  		Section{
-      		// Insert Code Here  
+      Section{
+      // Insert Code Here  
       }
             }
             .listStyle(GroupedListStyle())
@@ -55,7 +55,7 @@ List{
 
 ## Switch-Case
 
-Each View is mostly the same except for the different Mathematical calculations. In TempView, I used an if-else statement to do the calculations but then realised it would be much cleaner to use the switch-case statements for the remaining 3.
+Each View is mostly the same except for the different Mathematical calculations. In TempView, I used an if-else statement to do the calculations but then realised it would be much cleaner to use the **switch-case** statements for the remaining 3.
 
 ```swift
 // Converts input to smallest unit (seconds)
