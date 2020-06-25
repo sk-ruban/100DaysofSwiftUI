@@ -8,29 +8,54 @@
 
 import SwiftUI
 
-struct ButtonView : View
-{
+let moves = ["🗿", "📰", "✂️"]
+let states = ["WIN","LOSE"]
+
+// Game chooses a random move
+var appRandom = Int.random(in: 0...2)
+// Game prompts user to either win/lose
+var win = Int.random(in: 0...1)
+// What the user selects
+var userChoice = 0
+
+private var scoreTitle = ""
+
+struct ButtonView : View {
+    var text: String
+    var struct1 = ContentView()
+    var type: Int {
+        switch text{
+            case "🗿":
+                userChoice = 0
+                return 0
+            case "📰":
+                userChoice = 1
+                return 1
+            default:
+                userChoice = 2
+                return 2
+        }
+    }
+    
     var body: some View{
-        Text("Headline").bold().font(Font(UIFont.systemFont(ofSize: 30.0)))
+        ZStack{
+            Circle()
+                .fill(Color.red)
+                .frame(width: 70, height: 70)
+            Button(moves[type]){
+                self.struct1.appTurn()
+                self.struct1.nextQn()
+                print("lol")
+            }
+            .font(.largeTitle)
+        }
     }
 }
 
 struct ContentView: View {
-    
-    // Game chooses a random move
-    @State var appRandom = Int.random(in: 0...2)
-    // Game prompts user to either win/lose
-    @State var win = Int.random(in: 0...1)
-    // What the user selects
-    @State var userChoice = 0
-    
-    let moves = ["🗿", "📰", "✂️"]
-    let states = ["WIN","LOSE"]
-    
-    @State private var userScore = 0
-    @State var noOfTurns = 0
     @State private var showingScore = false
-    @State private var scoreTitle = ""
+    @State private var userScore = 0
+    @State private var noOfTurns = 0
     
     var body: some View {
         NavigationView{
@@ -57,20 +82,22 @@ struct ContentView: View {
             
                 HStack(spacing: 50){
                     Button("🗿"){
-                        self.userChoice = 0
+                        userChoice = 0
                         self.appTurn()
                         self.nextQn()
                     }
                     Button("📰"){
-                        self.userChoice = 1
+                        userChoice = 1
                         self.appTurn()
                         self.nextQn()
                     }
                     Button("✂️"){
-                        self.userChoice = 2
+                        userChoice = 2
                         self.appTurn()
                         self.nextQn()
                     }
+                    ButtonView(text:"✂️")
+                    
                 }
                 .font(.largeTitle)
                 
@@ -113,7 +140,7 @@ struct ContentView: View {
         noOfTurns += 1
         if noOfTurns == 10{
             showingScore = true
-        }
+            }
         }
     
     func nextQn(){
